@@ -1,0 +1,37 @@
+{
+  "name": "𝗦𝗼𝗨𝗿𝗖𝗲 𝗞𝗮𝗧𝘆𝗔",
+  "description": "Telegram Bot",
+  "logo": "https://telegra.ph/file/d611842a0cee1884f725d.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+  "repository": "https://github.com/Mazensaid24/Market_katya",
+  "env": {
+  "TOKEN":{
+  "description":"توكن بوتك",
+  "value":"",
+  "required":true
+  }
+ }
+}
+
